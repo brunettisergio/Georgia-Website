@@ -1,15 +1,5 @@
-body {
-	margin-left: 20%;
-	margin-right: 20%;
-}
-
-p {
-	text-align: justify;
-}
-
 aside {
 	float: left;
-
 	margin-right: 20px;
 	box-sizing: content-box;
 	width: 150px;
@@ -17,18 +7,6 @@ aside {
 
 aside p {
 	text-align: left;
-}
-
-nav {
-	display: block;
-	background-color: lightseagreen;
-}
-
-#navBar {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	list-style: none;
 }
 
 img {
