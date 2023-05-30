@@ -1,0 +1,94 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="styles/contact-style.css" />
+		<meta name="author" content="Sergio Brunetti" />
+		<title>Contact Us</title>
+	</head>
+
+	<body>
+		<nav>
+			<ul id="navBar">
+				<li id="title">Title</li>
+				<li class="dropdown-menu">
+					<button class="dropdown-btn">States</button>
+					<!-- Container needed to position dropdown content -->
+					<div class="dropdown-content">
+						<a href="#">Florida</a>
+						<a href="#">Georgia</a>
+					</div>
+				</li>
+				<li class="dropdown-menu">
+					<button class="dropdown-btn">Cities</button>
+					<div class="dropdown-content">
+						<a href="#">Atlanta</a>
+						<a href="#">Miami</a>
+					</div>
+				</li>
+				<li id="contactButton">
+					<a href="contact.html" target="_blank" rel="help">
+						Contact Us
+					</a>
+				</li>
+				<li>
+					<!-- TODO add search icon -->
+					<input
+						type="search"
+						id="searchBar"
+						placeholder="Search..."
+					/>
+				</li>
+			</ul>
+		</nav>
+
+		<header></header>
+		<section>
+			<form>
+				<table>
+					<tr></tr>
+				</table>
+				<p>
+					<label for="firstNameInput">First Name:</label>
+					<input type="text" id="firstNameInput" placeholder="John" />
+				</p>
+				<p>
+					<label for="lastNameInput">Last Name:</label>
+					<input type="text" id="lastNameInput" placeholder="Doe" />
+				</p>
+				<p>
+					<label for="emailInput">Email:</label>
+					<input
+						type="email"
+						id="emailInput"
+						placeholder="johndoe@email.com"
+					/>
+				</p>
+				<p>
+					<label for="emailConfirmationInput">Verify Email:</label>
+					<input
+						type="text"
+						id="emailConfirmationInput"
+						placeholder="johndoe@email.com"
+					/>
+				</p>
+				<p>
+					<label for="messageInput">Message</label>
+					<textarea
+						id="messageInput"
+						cols="30"
+						rows="10"
+						placeholder="Write your message here."
+					></textarea>
+				</p>
+			</form>
+		</section>
+	</body>
+</html>

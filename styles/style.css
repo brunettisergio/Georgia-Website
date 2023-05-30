@@ -4,6 +4,15 @@ body {
 	font-family: Roboto, Arial;
 }
 
+p {
+	text-align: justify;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
 nav {
 	position: sticky;
 	top: 0;
@@ -14,13 +23,19 @@ nav {
 #navBar {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	list-style: none;
+	padding: 0px;
 }
 
 #navBar li {
 	color: white;
-	/* TODO center items vertically */
+	margin: auto;
+}
+
+.dropdown-content a:link,
+.dropdown-content a:visited {
+	color: white;
 }
 
 .dropdown-btn {
@@ -64,8 +79,4 @@ nav {
 
 .dropdown-menu:hover .dropdown-btn {
 	background-color: darkcyan;
-}
-
-p {
-	text-align: justify;
 }
