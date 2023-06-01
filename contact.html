@@ -10,6 +10,7 @@
 		/>
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/contact-style.css" />
+		<script src="scripts/validate.js"></script>
 		<meta name="author" content="Sergio Brunetti" />
 		<title>Contact Us</title>
 	</head>
@@ -18,14 +19,15 @@
 		<nav>
 			<ul id="navBar">
 				<li id="title">Title</li>
+
 				<li class="dropdown-menu">
 					<button class="dropdown-btn">States</button>
-					<!-- Container needed to position dropdown content -->
 					<div class="dropdown-content">
 						<a href="#">Florida</a>
 						<a href="#">Georgia</a>
 					</div>
 				</li>
+
 				<li class="dropdown-menu">
 					<button class="dropdown-btn">Cities</button>
 					<div class="dropdown-content">
@@ -33,11 +35,13 @@
 						<a href="#">Miami</a>
 					</div>
 				</li>
+
 				<li id="contactButton">
 					<a href="contact.html" target="_blank" rel="help">
 						Contact Us
 					</a>
 				</li>
+
 				<li>
 					<!-- TODO add search icon -->
 					<input
@@ -51,7 +55,7 @@
 
 		<header></header>
 		<section>
-			<form>
+			<form id="contactForm">
 				<table>
 					<tr></tr>
 				</table>
@@ -88,6 +92,7 @@
 						placeholder="Write your message here."
 					></textarea>
 				</p>
+				<button>Submit</button>
 			</form>
 		</section>
 	</body>

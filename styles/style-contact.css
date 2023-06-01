@@ -1,0 +1,12 @@
+form {
+	display: block;
+}
+
+form p {
+	display: flex;
+	align-items: center;
+}
+
+form p label {
+	margin-right: 100px;
+}
