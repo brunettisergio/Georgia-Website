@@ -77,3 +77,5 @@ messageWidget.addEventListener("focusout", event => {
 		messageWidget.style.borderColor = "";
 	}
 });
+
+// submit button
