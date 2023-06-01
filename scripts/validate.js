@@ -1,58 +1,79 @@
-let firstNameValid = false,
-	lastNameValid = false,
-	emailValid = false,
-	firstNameWidget = document.querySelector("#firstNameInput"),
-	lastNameWidget = document.querySelector("#lastNameInput"),
-	emailWidget = document.querySelector("#emailInput"),
-	emailConfirmationWidget = document.querySelector("#emailConfirmationInput"),
-	formWidget = document.querySelector("#contactForm");
+const firstNameWidget = document.querySelector("#firstName"),
+	lastNameWidget = document.querySelector("#lastName"),
+	emailWidget = document.querySelector("#email"),
+	emailConfirmationWidget = document.querySelector("#emailConfirmation"),
+	messageWidget = document.querySelector("#message"),
+	submitBtnWidget = document.querySelector("#submitBtn");
 
-firstNameWidget.addEventListener(
-	"input",
-	validateName(firstNameWidget.value, 0)
-);
-lastNameWidget.addEventListener(
-	"input",
-	validateInput(lastNameWidget.value, 1)
-);
-emailWidget.addEventListener("input", validateInput(emailWidget.value, 2));
-emailConfirmationWidget.addEventListener(
-	"input",
-	validateInput(emailConfirmationWidget.value, 2)
-);
-formWidget.addEventListener("submit", checkForm);
-
-function validateInput(input, option) {
-	switch (option) {
-		case 0:
-			if (input.trim().length > 0 && isNaN(input)) firstNameValid = true;
-			else {
-				firstNameWidget.style.border = "5px solid";
-				firstNameWidget.style.borderColor = "red";
-			}
-			break;
-
-		case 1:
-			if (input.trim().length > 0 && isNaN(input)) lastNameValid = true;
-			else {
-				lastNameWidget.style.border = "5px solid";
-				lastNameWidget.style.borderColor = "red";
-			}
-			break;
-
-		case 2:
-			if (input.trim().length > 0 && emailFormat.test(input))
-				emailWidget = true;
-			else {
-				emailWidget.style.border = "5px solid";
-				emailWidget.style.borderColor = "red";
-			}
-			break;
+firstNameWidget.addEventListener("focusout", event => {
+	if (
+		!(
+			firstNameWidget.value.trim().length > 0 &&
+			firstNameWidget.value.trim().length < 16 &&
+			isNaN(firstNameWidget.value.trim())
+		)
+	) {
+		firstNameWidget.style.border = "2px solid";
+		firstNameWidget.style.borderColor = "red";
+	} else {
+		firstNameWidget.style.border = "";
+		firstNameWidget.style.borderColor = "";
 	}
-}
+});
 
-function checkForm(event) {
-	if (!firstNameValid || !lastNameValid || !emailValid) {
-		event.preventDefault();
+lastNameWidget.addEventListener("focusout", event => {
+	if (
+		!(
+			lastNameWidget.value.trim().length > 0 &&
+			lastNameWidget.value.trim().length < 16 &&
+			isNaN(lastNameWidget.value.trim())
+		)
+	) {
+		lastNameWidget.style.border = "2px solid";
+		lastNameWidget.style.borderColor = "red";
+	} else {
+		lastNameWidget.style.border = "";
+		lastNameWidget.style.borderColor = "";
 	}
-}
+});
+
+emailWidget.addEventListener("focusout", event => {
+	if (
+		!(
+			emailWidget.value.trim().length > 0 &&
+			emailWidget.value.trim().length < 16 &&
+			isNaN(emailWidget.value.trim())
+		)
+	) {
+		emailWidget.style.border = "2px solid";
+		emailWidget.style.borderColor = "red";
+	} else {
+		emailWidget.style.border = "";
+		emailWidget.style.borderColor = "";
+	}
+});
+
+emailConfirmationWidget.addEventListener("focusout", event => {
+	if (!(emailConfirmationWidget.value.trim() === emailWidget.value.trim())) {
+		emailConfirmationWidget.style.border = "2px solid";
+		emailConfirmationWidget.style.borderColor = "red";
+	} else {
+		emailConfirmationWidget.style.border = "";
+		emailConfirmationWidget.style.borderColor = "";
+	}
+});
+
+messageWidget.addEventListener("focusout", event => {
+	if (
+		!(
+			messageWidget.value.trim().length > 0 &&
+			messageWidget.value.trim().length < 360
+		)
+	) {
+		messageWidget.style.border = "2px solid";
+		messageWidget.style.borderColor = "red";
+	} else {
+		messageWidget.style.border = "";
+		messageWidget.style.borderColor = "";
+	}
+});

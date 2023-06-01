@@ -1,6 +1,6 @@
 body {
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
 	font-family: Roboto, Arial;
 }
 
@@ -8,9 +8,10 @@ p {
 	text-align: justify;
 }
 
-a:link,
-a:visited {
+#navBar a:link,
+#navBar a:visited {
 	text-decoration: none;
+	color: white;
 }
 
 nav {
