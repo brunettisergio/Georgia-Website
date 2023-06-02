@@ -6,13 +6,9 @@ const firstNameWidget = document.querySelector("#firstName"),
 	submitBtnWidget = document.querySelector("#submitBtn");
 
 firstNameWidget.addEventListener("focusout", event => {
-	if (
-		!(
-			firstNameWidget.value.trim().length > 0 &&
-			firstNameWidget.value.trim().length < 16 &&
-			isNaN(firstNameWidget.value.trim())
-		)
-	) {
+	let input = firstNameWidget.value.trim();
+
+	if (!(input.length > 0 && input.length < 16 && isNaN(input))) {
 		firstNameWidget.style.border = "2px solid";
 		firstNameWidget.style.borderColor = "red";
 	} else {
@@ -22,13 +18,9 @@ firstNameWidget.addEventListener("focusout", event => {
 });
 
 lastNameWidget.addEventListener("focusout", event => {
-	if (
-		!(
-			lastNameWidget.value.trim().length > 0 &&
-			lastNameWidget.value.trim().length < 16 &&
-			isNaN(lastNameWidget.value.trim())
-		)
-	) {
+	let input = lastNameWidget.value.trim();
+
+	if (!(input.length > 0 && input.length < 16 && isNaN(input))) {
 		lastNameWidget.style.border = "2px solid";
 		lastNameWidget.style.borderColor = "red";
 	} else {
@@ -38,23 +30,30 @@ lastNameWidget.addEventListener("focusout", event => {
 });
 
 emailWidget.addEventListener("focusout", event => {
-	if (
-		!(
-			emailWidget.value.trim().length > 0 &&
-			emailWidget.value.trim().length < 16 &&
-			isNaN(emailWidget.value.trim())
-		)
-	) {
+	let input = emailWidget.value.trim();
+
+	if (!(input.length > 0 && input.length < 36 && isNaN(input))) {
 		emailWidget.style.border = "2px solid";
 		emailWidget.style.borderColor = "red";
 	} else {
 		emailWidget.style.border = "";
 		emailWidget.style.borderColor = "";
 	}
+
+	if (!(emailConfirmationWidget.value.trim() === input)) {
+		emailConfirmationWidget.style.border = "2px solid";
+		emailConfirmationWidget.style.borderColor = "red";
+	} else {
+		emailConfirmationWidget.style.border = "";
+		emailConfirmationWidget.style.borderColor = "";
+	}
 });
 
 emailConfirmationWidget.addEventListener("focusout", event => {
-	if (!(emailConfirmationWidget.value.trim() === emailWidget.value.trim())) {
+	let input = emailConfirmationWidget.value.trim(),
+		compare = emailWidget.value.trim();
+
+	if (!(input === compare)) {
 		emailConfirmationWidget.style.border = "2px solid";
 		emailConfirmationWidget.style.borderColor = "red";
 	} else {
@@ -64,12 +63,9 @@ emailConfirmationWidget.addEventListener("focusout", event => {
 });
 
 messageWidget.addEventListener("focusout", event => {
-	if (
-		!(
-			messageWidget.value.trim().length > 0 &&
-			messageWidget.value.trim().length < 360
-		)
-	) {
+	let input = messageWidget.value.trim();
+
+	if (!(input.length > 0 && input.length < 360)) {
 		messageWidget.style.border = "2px solid";
 		messageWidget.style.borderColor = "red";
 	} else {
