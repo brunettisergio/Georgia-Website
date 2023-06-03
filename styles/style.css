@@ -1,11 +1,51 @@
 body {
-	margin-left: 15%;
-	margin-right: 15%;
+	margin: 0px;
+	padding-left: 17%;
+	padding-right: 17%;
 	font-family: Roboto, Arial;
+	font-size: 1.115vw;
+	background-color: #1f2933;
+	color: #e5e7ea;
 }
 
 p {
 	text-align: justify;
+}
+
+nav {
+	position: sticky;
+	top: 0;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: block;
+	font-size: 1.3vw;
+}
+
+.dropdown-menu button {
+	font-size: 1.3vw;
+}
+
+nav,
+.banner {
+	margin-left: -27%;
+	margin-right: -27%;
+}
+
+#navBar {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 0px;
+	justify-content: space-evenly;
+	list-style: none;
+	padding: 0px;
+}
+
+#navBar a:link,
+#navBar a:visited,
+.dropdown-content a:link,
+.dropdown-content a:visited,
+.dropdown-btn {
+	color: white;
 }
 
 #navBar a:link,
@@ -14,33 +54,12 @@ p {
 	color: white;
 }
 
-nav {
-	position: sticky;
-	top: 0;
-	display: block;
-	background-color: lightseagreen;
-}
-
-#navBar {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	list-style: none;
-	padding: 0px;
-}
-
 #navBar li {
 	color: white;
 	margin: auto;
 }
 
-.dropdown-content a:link,
-.dropdown-content a:visited {
-	color: white;
-}
-
 .dropdown-btn {
-	background-color: lightseagreen;
 	color: white;
 	padding: 16px;
 	font-size: 16px;
@@ -62,21 +81,82 @@ nav {
 }
 
 .dropdown-content a {
-	background-color: lightseagreen;
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 }
 
-.dropdown-content a:hover {
-	background-color: darkcyan;
-}
-
 .dropdown-menu:hover .dropdown-content {
 	display: block;
 }
 
+nav,
+.dropdown-btn,
+.dropdown-content a {
+	background-color: #018786;
+}
+
+.dropdown-content a:hover,
+.dropdown-btn:hover,
 .dropdown-menu:hover .dropdown-btn {
-	background-color: darkcyan;
+	background-color: #03dac6;
+}
+
+header {
+	margin-top: 0;
+	margin-bottom: 80px;
+	padding-top: 0;
+}
+
+.banner {
+	display: block;
+	margin-top: -3.3%;
+	width: 101.5vw;
+	border: 0px;
+	padding: 0px;
+}
+
+h1 {
+	color: white;
+	font-size: 4.8vw;
+	margin-top: -37%;
+	margin-left: -13%;
+	margin-bottom: 33%;
+}
+
+h2 {
+	font-size: 2.15em;
+}
+
+footer {
+	margin-top: 10vh;
+	margin-left: -27%;
+	margin-right: -27%;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	background-color: #3e4c59;
+	display: flex;
+	flex: auto;
+	justify-content: center;
+	text-align: left;
+}
+
+table {
+	box-sizing: content-box;
+	margin-left: 11vw;
+}
+
+th {
+	height: 50px;
+	text-align: left;
+}
+
+tr {
+	text-align: left;
+}
+
+td {
+	padding-left: 0px;
+	padding-right: 150px;
 }

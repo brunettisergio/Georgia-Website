@@ -13,7 +13,7 @@ ul {
 }
 
 #services ul,
-#moving ol,
+#citiesList ol,
 #funFacts ul {
 	margin-top: 30px;
 	margin-bottom: 90px;
@@ -22,7 +22,7 @@ ul {
 }
 
 #services li,
-#moving li,
+#citiesList li,
 #funFacts li {
 	border: 5px;
 	border-style: solid;
