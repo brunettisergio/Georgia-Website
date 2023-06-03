@@ -45,22 +45,22 @@ nav,
 .dropdown-content a:link,
 .dropdown-content a:visited,
 .dropdown-btn {
-	color: white;
+	color: #e5e7ea;
 }
 
 #navBar a:link,
 #navBar a:visited {
 	text-decoration: none;
-	color: white;
+	color: #e5e7ea;
 }
 
 #navBar li {
-	color: white;
+	color: #e5e7ea;
 	margin: auto;
 }
 
 .dropdown-btn {
-	color: white;
+	color: #e5e7ea;
 	padding: 16px;
 	font-size: 16px;
 	border: none;
@@ -113,14 +113,15 @@ header {
 	display: block;
 	margin-top: -3.3%;
 	width: 101.5vw;
+	height: 45.5vh;
 	border: 0px;
 	padding: 0px;
 }
 
 h1 {
-	color: white;
+	color: #e5e7ea;
 	font-size: 4.8vw;
-	margin-top: -37%;
+	margin-top: -35%;
 	margin-left: -13%;
 	margin-bottom: 33%;
 }
@@ -140,6 +141,11 @@ footer {
 	flex: auto;
 	justify-content: center;
 	text-align: left;
+}
+
+footer a {
+	color: #e5e7ea;
+	text-decoration: none;
 }
 
 table {
