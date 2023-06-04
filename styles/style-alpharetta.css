@@ -6,8 +6,9 @@
 	width: 32vw;
 	height: 33.5vh;
 }
-#park {
-	margin-bottom: 13vh;
+#park,
+#food {
+	margin-bottom: 10vh;
 }
 
 #park-img {
