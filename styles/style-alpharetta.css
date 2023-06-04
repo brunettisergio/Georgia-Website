@@ -1,0 +1,37 @@
+#intro-img {
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	width: 32vw;
+	height: 33.5vh;
+}
+#park {
+	margin-bottom: 13vh;
+}
+
+#park-img {
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 25px;
+	width: 32vw;
+	height: 33.5vh;
+}
+
+#greenway-text {
+	font-size: 1.23em;
+}
+
+#food-img {
+	float: right;
+	width: 30vw;
+	height: 33.5vh;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+
+aside {
+	margin-top: 20vh;
+}
