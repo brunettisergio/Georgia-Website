@@ -1,5 +1,5 @@
 body {
-	margin: 0px;
+	margin: 0;
 	padding-left: 17%;
 	padding-right: 17%;
 	font-family: Roboto, Arial;
@@ -165,4 +165,9 @@ tr {
 td {
 	padding-left: 0px;
 	padding-right: 150px;
+}
+
+.icon {
+	width: 8vw;
+	height: 12vh;
 }
