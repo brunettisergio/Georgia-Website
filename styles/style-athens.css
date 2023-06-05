@@ -1,0 +1,32 @@
+#athens-img {
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	width: 26.5vw;
+	height: 29.5vh;
+}
+
+#education,
+#breweries {
+	margin-top: 10vh;
+}
+
+#education-img {
+	float: left;
+	margin-top: 5px;
+	margin-right: 25px;
+	width: 28vw;
+	height: 33.5vh;
+}
+
+#breweries-img {
+	float: right;
+	margin-left: 25px;
+	width: 28vw;
+	height: 30vh;
+}
+
+aside {
+	margin-top: 20vh;
+}
